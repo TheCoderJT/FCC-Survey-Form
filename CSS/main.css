@@ -8,7 +8,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -55,8 +55,8 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.2rem;
   margin-bottom: 0.45rem;
 }
@@ -108,7 +108,7 @@ form {
   background-color: rgba(29, 29, 29, 0.705);
   padding: 2.5rem;
   -webkit-box-shadow: 1px 1px 15px 0px rgba(255, 255, 255, 0.068);
-  box-shadow: 1px 1px 15px 0px rgba(255, 255, 255, 0.068);
+          box-shadow: 1px 1px 15px 0px rgba(255, 255, 255, 0.068);
 }
 
 @media (min-width: 576px) {
@@ -152,8 +152,8 @@ form {
 
 .form-control:focus {
   border-color: #000000;
-  -webkit-box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.5);
-  box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0.9px 1px 8px 0px rgba(255, 255, 255, 0.5);
+          box-shadow: 0.9px 1px 8px 0px rgba(255, 255, 255, 0.5);
 }
 
 .input-radio,
@@ -180,8 +180,8 @@ form {
   background: #234744;
   color: inherit;
   border-radius: 1.5px;
-  -webkit-box-shadow: 4px 4px 15px 0px black;
-  box-shadow: 4px 4px 15px 0px black;
+  -webkit-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.253);
+          box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.253);
   cursor: pointer;
   font-size: 1.35rem;
   font-weight: bold;
@@ -189,6 +189,6 @@ form {
 }
 
 .submit-button:hover {
-  -webkit-box-shadow: 4px 4px 15px 0px #1b1b1b;
-  box-shadow: 4px 4px 15px 0px #1b1b1b;
+  -webkit-box-shadow: 6px 6px 15px 0px #1b1b1b;
+          box-shadow: 6px 6px 15px 0px #1b1b1b;
 }
