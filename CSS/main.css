@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+:root {
+  --main-font-color: rgb(228, 228, 228);
+  --sub-font-color: rgb(207, 207, 207);
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--main-font-color);
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(115deg, rgba(0, 0, 0, 0.9), rgba(107, 107, 107, 0.25)), url(https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 0.45rem;
+}
+
+button {
+  border: none;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.header {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 0px 5px 15px black;
+  font-size: 1.4rem;
+}
+
+.header p {
+  font-style: italic;
+  font-size: 1.15rem;
+}
+
+.clue {
+  margin-left: 0.25rem;
+  font-size: 0.9rem;
+  color: var(--sub-font-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+/* form */
+form {
+  background-color: rgba(29, 29, 29, 0.705);
+  padding: 2.5rem;
+  -webkit-box-shadow: 1px 1px 15px 0px rgba(255, 255, 255, 0.068);
+  box-shadow: 1px 1px 15px 0px rgba(255, 255, 255, 0.068);
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.2rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.3rem 0.7rem;
+  color: #4e4e4e;
+  background-color: var(--main-font-color);
+  background-clip: padding-box;
+  border: 1.25px solid #ced4da;
+  border-radius: 0.25rem;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #000000;
+  -webkit-box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 8px 0px rgba(255, 255, 255, 0.5);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.1rem;
+  min-width: 1.1rem;
+  color: #4e4e4e;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+  color: #4e4e4e;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  height: 70px;
+  background: #234744;
+  color: inherit;
+  border-radius: 1.5px;
+  -webkit-box-shadow: 4px 4px 15px 0px black;
+  box-shadow: 4px 4px 15px 0px black;
+  cursor: pointer;
+  font-size: 1.35rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.submit-button:hover {
+  -webkit-box-shadow: 4px 4px 15px 0px #1b1b1b;
+  box-shadow: 4px 4px 15px 0px #1b1b1b;
+}
